@@ -1,0 +1,169 @@
+@media only screen and (max-width: 1199px) {
+  /* SCROLLBAR RESPONSIVE */
+  .myScrollBar-topPhoto {
+    right: -46rem;
+  }
+  .myScroller-part {
+    height: 50vh;
+
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* CROUSEL RESPONSIVE*/
+  .mySlider-texts {
+    font-size: 1.3rem;
+    padding: 3rem;
+  }
+
+  /* SCROLLBAR RESPONSIVE */
+  .myScrollBar-topPhoto {
+    right: -32rem;
+    top: -4rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* NAVBAR RESPONSIVE*/
+  nav {
+    z-index: 2;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  nav li {
+    background-color: var(--secondaryColor);
+    text-align: center;
+  }
+  nav li:first-child {
+    padding-top: 10rem;
+  }
+  nav li:last-child {
+    padding-bottom: 10rem;
+  }
+  nav li a {
+    font-size: 2.5rem;
+    color: var(--whiteColor);
+    margin-bottom: 0%;
+  }
+  nav li a .active {
+    color: var(--mainColor);
+  }
+  .myNavbar-logo {
+    transform: scale( 0.5);
+    margin-left: -20%;
+  }
+  .myNavbar-icon {
+    transform: scale(0.8);
+   
+  }
+  .myNavbar-icon,
+  .myNavbar-logo {
+    margin-top: -40%;
+    margin-bottom: -38%;
+  }
+
+  /* CROUSEL RESPONSIVE*/
+  .mySlider-icone {
+    transform: scale( 0.5); 
+  }
+  .mySlider-contents {
+    padding: 0;
+    height: 150vh;
+  }
+
+  /* ON TRIP RESPONSIVE*/
+  .myOnTrip-image {
+    display: none;
+  }
+  .myOnTrip {
+    display: flex;
+    justify-content: center;
+  }
+  .myOnTrip-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .myOnTrip-texts p {
+    width: 50%;
+    min-width: 285px;
+  }
+
+  /* ON TRIP- BACKGROND PHOTO */
+  .myOnTrip-texts::before {
+    content: "";
+    background: url(../images/on-trip.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+  }
+
+  /* SCROLLBAR RESPONSIVE */
+  #myScrollBar-nav {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3%;   
+  }
+  .myScrollBar-topPhoto {
+    display: none;
+  }
+  .myScrollBar .row {
+    border: var(--secondaryColor) 2px solid;
+    border-top: unset;
+    border-right: unset;
+    border-radius: 0 34px;
+  }
+  .myScroller-part {
+    border-right: var(--secondaryColor) 2px solid;
+   border-bottom: unset;
+  }
+  .myScroller-contents {
+    font-size: 1rem;
+  }
+  .myScroller-contents h1 {
+    font-size: 2rem;
+  }
+  .myScroller-images img {
+    padding: 0;
+  }
+
+  /* WHY US RESPONSIVE */
+  .myWhyUs-item {
+    display: flex;
+    order: 1;
+  }
+  .myWhyUs h2 {
+    order: 0;
+  }
+  #myWhyUs-firtItem {
+    margin-bottom: 0;
+  }
+  .myWhyUs-item p {
+    padding: 10% 0;
+  }
+
+  /* FOOTER RESPONSIVE */
+  .myFooter-about {
+    padding: 0;
+    padding-top: 8rem;
+    height: 400px;
+    width: 240px;
+  }
+  .myFooter-about p {
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    padding: 0;
+  }
+  .myFooter-image img {
+    width: 95%;
+  }
+}

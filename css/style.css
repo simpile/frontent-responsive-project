@@ -1,0 +1,241 @@
+:root {
+  --mainColor: #534caf;
+  --primeryColor: #8526bd;
+  --secondaryColor: #7a74c1;
+  --greyColor: #707070;
+  --whiteColor: #fff;
+}
+
+body {
+  font-family: Monotype Corsiva;
+  color: var(--mainColor);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+/* NAVBAR */
+nav {
+  height: 60px;
+  background-color: var(--whiteColor);
+  padding: 0 !important;
+  padding-right: 4rem;
+}
+.myNavbar-logo {
+  transform: scale(0.7);
+
+}
+nav li {
+  padding-right: 1rem;
+}
+nav li a {
+  color: var(--mainColor);
+  font-size: 2rem;
+}
+nav a.active {
+  color: var(--primeryColor);
+}
+nav a:hover {
+  color: var(--greyColor);
+}
+
+/* CRAOUSEL */
+.mySlider-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.mySlider-indicators li {
+  background-color: var(--greyColor);
+  height: 0.5rem;
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: -3rem;
+}
+.mySlider-indicators .active {
+  background-color: var(--mainColor);
+}
+.mySlider-contents {
+  height: 75vh;
+}
+.mySlider-texts {
+  padding: 5rem;
+  text-align: justify;
+}
+
+/* ON TRIP PART */
+.myOnTrip {
+  margin-top: 3rem;
+}
+.myOnTrip-image img {
+  width: 100%;
+}
+.myOnTrip-texts {
+  padding-top: 6rem;
+  text-align: justify;
+}
+.myOnTrip-texts p {
+  width: 100%;
+}
+
+/* SCROLLBAR */
+.myScrollBar {
+  padding: 4rem;
+  text-transform: capitalize;
+  position: relative;
+}
+.myScrollBar .row {
+  border: var(--secondaryColor) 1px solid;
+  border-left: unset;
+  border-bottom: unset;
+}
+
+/* NAVBAR OF SCROLLBAR */
+#myScrollBar-nav {
+  border-radius: 0 34px 0 34px;
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#myScrollBar-nav p {
+  text-decoration: none;
+  color: var(--whiteColor);
+  opacity: 0.5;
+ 
+}
+#myScrollBar-nav .active p {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+
+/* MAIN PART OF SCROLLBAR */
+.myScroller-part {
+  overflow-y: scroll;
+  height: 75vh;
+  border: var(--secondaryColor) 1px solid;
+  border-left: unset;
+  border-top: unset;
+  }
+.myScroller-contents h1 {
+  padding-top: 2rem;
+}
+.myScroller-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+.myScroller-images img {
+  width: 25%;
+  padding: 1rem;
+}
+
+/* TOP PHOTOS OF SCROLLBAR */
+
+.myScrollBar-topPhoto {
+  position: absolute;
+  right: -53rem;
+  top: -5rem;
+  z-index: 1;
+  opacity: 0;
+  width: 85%;
+}
+.myScrollBar .active img {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+
+/* SCROLLBAR DESIGN/ WORK IN CHROME */
+.myScroller-part::-webkit-scrollbar {
+  width: 15px;
+}
+.myScroller-part::-webkit-scrollbar-track {
+  background-color: var(--whiteColor);
+  border: var(--mainColor) 1px solid;
+}
+.myScroller-part::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--mainColor);
+}
+.myScroller-part::-webkit-scrollbar-button:single-button {
+  background-color: var(--whiteColor);
+  display: block;
+  border-style: solid;
+}
+.myScroller-part::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent var(--greyColor) transparent;
+}
+.myScroller-part::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent var(--mainColor) transparent;
+}
+.myScroller-part::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: var(--greyColor) transparent transparent transparent;
+}
+.myScroller-part::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: var(--mainColor) transparent transparent transparent;
+}
+
+/* WHY US */
+.myWhyUs {
+  padding: 4rem;
+  font-size: 2rem;
+}
+.myWhyUs img {
+  width: 90%;
+  min-width: 120px;
+}
+.myWhyUs h2 {
+  font-size: 2.5rem;
+}
+.myWhyUs-item p {
+  width: 100%;
+  padding-bottom: 30%;
+}
+#myWhyUs-firtItem {
+  margin-bottom: -17%;
+}
+
+/* FOOTER */
+footer {
+  background-image: url(../images/footer-bg.png);
+  background-size: cover;
+  padding-top: 5rem;
+}
+.myFooter {
+  width: 100%;
+}
+
+.myFooter-image img {
+  width: 70%;
+  padding-top: 12rem;
+}
+.myFooter-about {
+  color: var(--whiteColor);
+  text-align: justify;
+  max-height: fit-content;
+  width: 100%;
+  padding-top: 8.5rem;
+}
+.myFooter-about p {
+  width: 98%;
+  height: 50%;
+  padding-right: 5rem;
+  overflow: hidden;
+}
+
+.myFooter-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px var(--whiteColor) solid;
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+}
+.myFooter-icons img {
+  width: 10%;
+}
